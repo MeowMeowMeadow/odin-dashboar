@@ -71,11 +71,17 @@ body
 .announcement
 {
     display: flex;
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
 }
 
 .trending
 {
     display: flex;
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
 }
 
 .search
@@ -166,4 +172,49 @@ li p
     text-shadow: 0 0 5px black;
     cursor: pointer;
     border: 2px solid transparent;
+}
+
+.announcement > h4
+{
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.trending > h4
+{
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.a-content
+{
+    display: flex;
+    background-color: white;
+    flex: 1;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+.t-content
+{
+    display: flex;
+    background-color: white;
+    flex: 1;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+.border
+{
+    background-color: lightgray;
+    width: 100%;
+    height: 1px;
 }
