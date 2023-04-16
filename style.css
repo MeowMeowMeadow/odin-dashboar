@@ -69,15 +69,7 @@ body
     box-shadow: inset 0 5px 5px #4e4d4d;
 }
 
-.announcement
-{
-    display: flex;
-    flex-direction: column;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-}
-
-.trending
+.trending, .announcement
 {
     display: flex;
     flex-direction: column;
@@ -239,19 +231,22 @@ h4
     margin-bottom: 0.5rem;
 }
 
-.a-content
+.header p, .header h3
 {
-    display: flex;
-    background-color:#E5FFDE;
-    flex: 1;
-    border-radius: 8px;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-around;
-    padding: 1rem 2rem;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
 
-.t-content
+.project-header
+{
+    font-weight:bold;
+    font-size: 1.6rem;
+    margin: 0;
+    grid-column: 1/-1;
+    margin-bottom: -1rem;
+}
+
+.t-content, .a-content
 {
     display: flex;
     background-color: #E5FFDE;
